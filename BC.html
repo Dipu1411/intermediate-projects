@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .calculator {
+        width: 300px;
+        background-color: #333;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    #display {
+        width: 95%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 1.5em;
+        text-align: right;
+        border: none;
+        background-color: #444;
+        color: white;
+        border-radius: 4px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #555;
+        color: white;
+    }
+
+    .operator {
+        background-color: #ffa500;
+    }
+
+    button:hover {
+        background-color: #666;
+    }
+
+    .operator:hover {
+        background-color: #ffb326;
+    }
+</style>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button class="operator">C</button>
+            <button class="operator">+/-</button>
+            <button class="operator">%</button>
+            <button class="operator">/</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">*</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">-</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">+</button>
+            <button class="number">0</button>
+            <button class="number">.</button>
+            <button class="operator">=</button>
+        </div>
+    </div>
+    <script src="BC.js"></script>
+</body>
+
+</html>

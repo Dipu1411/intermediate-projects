@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz App</title>
+</head>
+<style>
+   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.quizz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.question {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    margin-bottom: 10px;
+}
+
+.options button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.options button.correct {
+    background-color: #4caf50;
+    color: white;
+}
+
+.options button.incorrect {
+    background-color: #f44336;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: black; 
+}
+</style>
+
+<body>
+    <div class="quizz-container" id="quizContainer"></div>
+    <script src="quizz.js"></script>
+</body>
+
+</html>
